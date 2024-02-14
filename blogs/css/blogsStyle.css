@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    outline: none;
+    border: solid #000 1px;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+body{
+    overflow: hidden;
+}
+
+.wrapper{
+    position: absolute;
+    border: solid transparent 1px;
+    height: 99.9%;
+    width: 100%;
+    top: 0%;
+    overflow: hidden;
+    background-color: 	rgb(255, 255, 255);
+    /* padding-top: 20%; */
+}
+
+.main__content{
+    border: solid blue 1px;
+    left: 0%;
+    position:absolute;
+    height: 80%;
+    top: 15%;
+    z-index: 999;
+}
+
+textarea{
+    position: absolute;
+    outline: none;
+    height: 15%;
+    padding-left: 5px;
+    color: black;
+    left: 20%;
+    width: 45%;
+    border: solid transparent 1px;
+    resize: none;
+    overflow-y: visible;
+    font-family:'Times New Roman', Times, serif;
+}
+
+:root{
+    --widthForTextarea: 55%
+}
+
+.contentTextArea{
+    top:25%;
+    height: 10%;
+    font-size: 26px;
+    width: var(--widthForTextarea);
+}
+
+.headline{
+    top: 17%;
+    font-size: 40px;
+    height: 10%;
+    font-weight: bold;
+    width: var(--widthForTextarea);
+
+}
+
+.header button{
+    position: absolute;
+    background-color: black;
+    top: 20%;
+    left: 88.5%;
+    padding: 7px;
+    text-align: center;
+    border: solid #000 1px;
+    width: 10%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 999;
+    color: white;
+
+}
+
+button:hover{
+
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+}
+
+.header{
+    position: fixed;
+    left: 0%;
+    width: 100%;
+    border: solid transparent 1px;
+    height: 8%;
+    z-index: 1;
+    box-shadow: 1px 2px 2px 1px;
+    z-index: 999;
+    background-color: white;
+}
+
+.add_info{
+    position: fixed;
+    left: 77.9%;
+    width: 22%;
+    top: 8.1%;
+    border: solid transparent 1px;
+    height: 91.7%;
+    box-shadow: 1px 4px 4px 1px black;
+}
+
+.author{
+    position: relative;
+    margin-top: 55%;
+    padding-left: 15px;
+}
+
+.author p{
+    margin-bottom: 7px;
+}
+
+.user_nameInput{
+    top: 15%;
+    left: 5%;
+    width: 60%;
+    border: solid #000 1px;
+    padding: 7px;
+    width: 80%;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    color: #000;
+}
+
+.functions p{
+    position: relative;
+    left: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.functions .fontsInput{
+    position: relative;
+    padding: 7px;
+    font-size: 16px;
+    width: 80%;
+    left: 5%;
+    /* font-family: monospace; */
+}

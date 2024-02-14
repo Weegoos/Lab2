@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: bisque;
+}
+
+/* wrapper */
+:root{
+    --blogLeftPositionForWrapper: 25px;
+}
+
+.wrapper{
+    position: relative;
+    /* border: solid #000 1px; */
+    width: 800px;
+    left: 0;
+    margin-top: 170px;
+    box-sizing: border-box;
+}
+
+.wrapper li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 30px;
+    border: solid white 1px;
+    background-color: white;
+    padding: 12px;
+    left: 120px;
+}
+
+.wrapper .headline{
+    font-size: 32px;
+    position: relative;
+    left:calc( var(--blogLeftPositionForWrapper) + 15px);
+    margin-top: var(--blogLeftPositionForWrapper);
+    margin-bottom: calc(var(--blogLeftPositionForWrapper) - 10px);
+    width: 85%;
+}
+
+.updateData{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 125px;
+    left: 350px;
+    border: solid bisque 1px;
+    background-color: bisque;
+    width: 800px;
+    height: 500px;
+    box-shadow: 2px 1px 2px 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.updateData input{
+    position: absolute;
+    margin-bottom: 1rem;
+    left: 75px;
+    top: 75px;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.updateData textarea{
+    position: absolute;
+    resize: none;
+    top: 130px;
+    outline: none;
+    left: 75px;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 650px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.updateData button{
+    position: absolute;
+    top: 450px;
+    left: 75px;
+    width: 100px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.updateData button:hover{
+    border-radius: 8px;
+}
+
+.updateData p{
+    position: absolute;
+    left: 75px;
+    top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.updateData .closeButton{
+    position: absolute;
+    left: 780px;
+    top: 8px;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.wrapper_headline__img{
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 10px;
+    position: relative;
+    margin-top: -1px;
+}
+
+.timestamp{
+    position: relative;
+    left: calc( var(--blogLeftPositionForWrapper) + 15px);
+    font-size: 14px;
+}
+
+.wrapper .wrapper__line{
+    width: 720px;
+    position: relative;
+    border: solid gray 1px;
+    margin-top: calc(var(--blogLeftPositionForWrapper) - 10px);
+    left: calc(var(--blogLeftPositionForWrapper) + 15px);
+    filter: brightness(185%);
+    margin-bottom: calc(var(--blogLeftPositionForWrapper) - 10px);;
+}
+
+.wrapper .wrapper__content{
+    position: relative;
+    left: calc(var(--blogLeftPositionForWrapper) + 15px);
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 720px;
+    word-break: normal;
+    justify-content: center;
+    text-align:justify;
+    white-space: pre-wrap;
+}
+
+.wrapper button{
+    position: relative;
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    left: 598px;
+}
+
+.wrapper .updateButton{
+    background-color: green;
+}
+
+.wrapper .deleteButton{
+    background-color: red;
+}
+
+.settingIcon{
+    position: absolute;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 43px;
+    left: 750px;
+    cursor: pointer;
+}
+
+.settingData{
+    position: absolute;
+    top: 69px;
+    left: 575px;
+    border: solid white 1px;
+    width: 190px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 2px 1px 2px 0px;
+    display: none;
+}
+
+.settingData p{
+    margin-top: 5px;
+    margin-bottom: 7px;
+    position: relative;
+    transition:0.25s ease;
+    width: 90%;
+    border: solid transparent 1px;
+    cursor: pointer;
+    left: 10px;
+}
+
+.statusStyle{
+    position: relative;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    left: 700px;
+    text-transform: lowercase;
+}

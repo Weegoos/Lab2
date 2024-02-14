@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/blogs/css/blogsStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form action="/blogs/send-message" method="post">
+                <div class="add_info">
+                    <div class="functions">
+                        <p>Резюме</p>
+                        <input class="fontsInput" v-model="fontInput" @keyup="saveFont" type="text" list="fonts">
+                        <datalist id="fonts">
+                          
+                        </datalist>
+                    </div>
+                    <div class="author">
+                        <p>Автор</p>
+                    <input type="text" name="user_name" placeholder="User Name" class="user_nameInput">
+                    </div>
+                </div>
+              
+                    <textarea v-model="headlineStorage" @keyup="headline" class="headline" type="text" name="headline" placeholder="Добавить заголовок записи" required></textarea>
+                    <textarea class="contentTextArea" v-model="contentStorage"  @keyup="content" name="blogTextArea" id="blogTextArea" cols="30" rows="10" required placeholder="Кликните сюда чтобы начать запись"></textarea>
+                    <div class="header">
+                        <button type="submit" class="submitButton" name="submitButton">Отправить</button>
+                    </div>
+                
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="/blogs/fontsInfo.js"></script>
+    <script src="/blogs/blogClientCode.js"></script>
+</body>
+</html>

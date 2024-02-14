@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="stylesheet" href="/reader/css/readStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <ul id="blogList"></ul>
+        </div>
+        <div class="content">
+           
+        </div>
+
+        <div class="updateData">
+            <form action="/read/update-blog" method="post">
+                <p>Update Section</p>
+                <input class="updateDataId" type="text" name="updateDataId" id="">
+                <textarea class="updateDataContent" name="updateDataContent" id="updateDataContent" cols="30" rows="10"></textarea>
+                <button class="updateButtonForUpdate" type="submit">Submit</button>
+                <span class="closeButton">X</span>
+            </form>
+            
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis cupiditate amet nam in natus cumque quaerat harum sit eligendi perferendis beatae nesciunt, ullam et laudantium laborum, fuga unde sint! -->
+        </div>
+
+    </div>
+
+    <!-- <div class="settingData">
+        <p class="additionalInfoButton">Подробно</p>
+    </div> -->
+    <!-- <span id="sp"></span> -->
+    <script src="/reader/readClientCode.js"></script>
+</body>
+</html>
