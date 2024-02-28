@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea{
+    resize: none;
+    outline: none;
+}
+
+button{
+    background-color: inherit;
+    cursor: pointer;
+}

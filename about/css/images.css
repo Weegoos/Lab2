@@ -1,0 +1,39 @@
+@import url('/settings/css/mainSettings.css');
+
+#container img{
+    vertical-align: top;
+    display: inline-block;
+    object-fit: cover;
+    height: 400px;
+    width: 500px;
+    cursor: pointer;
+}
+
+#container input{
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    border: solid #000 1px;
+    padding: 7px;
+    font-size: 18px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#container button{
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    border: solid #000 1px;
+    padding: 7px;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 5px;
+}
+#container p{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1rem;
+}

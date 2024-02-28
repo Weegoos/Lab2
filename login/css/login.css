@@ -1,0 +1,76 @@
+@import url(
+    '/settings/css/mainSettings.css'
+);
+
+body{
+    background-color: #474849;
+    overflow-x: hidden;
+}
+
+:root{
+    --wrapperWidth: 1450px;
+    --wrapperLeft: 45px;
+    --wrapperBorderRadius: 25px;
+}
+
+.wrapper{
+    position: relative;
+    width: var(--wrapperWidth);
+    border: solid #000 1px;
+    background: #000;
+    height: 700px;
+    left: var(--wrapperLeft);
+    top: 15px;
+    border-radius: var(--wrapperBorderRadius);
+    transition: 1s linear;
+
+    animation-name: wrapper;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wrapper {
+   0%{
+    border-radius: 3px;
+   }
+
+   100%{
+    border-radius: var(--wrapperBorderRadius);
+   }
+}
+
+.wrapper input{
+    position: relative;
+    top: 200px;
+    display: grid;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 225px;
+    font-size: 16px;
+    background-color: #33393F;
+    color: white;
+    border-radius: 5px;
+    left: 550px;
+}
+
+.wrapper input::placeholder{
+    color: #9CAAB8;
+}
+
+.wrapper button{
+    border: #185B9E 1px solid;
+    color: white;
+    position: relative;
+    top: 220px;
+    padding: 10px;
+    font-size: 18px;
+    left: 550px;
+    width: 245px;
+    transition: 0.5s ease-in-out;
+}
+
+.wrapper button:hover{
+    border-radius: 30px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="/price/css/price.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header__pricing">Our pricing</p>
+            <p class="header__headline">Chose Monochrome's plan that suits you best</p>
+            <p class="header__content">Crafted with a thoughtful focus on developers' needs and preferences</p>
+        </div>
+
+        <section class="prices">
+            <div class="pricesDiv">
+                <p>Free Plan</p>
+                <p>Description</p>
+                <p><span style="font-size: 30px; font-weight: bold;">0$</span> per month</p>
+                <button class="startButton">Get Started</button>
+            </div>
+
+            <div class="pricesDiv">
+                <p>Pro Plan</p>
+                <p>Description</p>
+                <p><span style="font-size: 30px; font-weight: bold;">20$</span> per month</p>
+                <button class="startButton">Get Started</button>
+            </div>
+
+            <div class="pricesDiv">
+                <p>Elite Plan</p>
+                <p>Description</p>
+                <p><span style="font-size: 30px; font-weight: bold;">50$</span> per month</p>
+                <button class="startButton">Get Started</button>
+            </div>
+        </section>
+
+        <div class="forms">
+            <form action="/pricing/send-email" method="POST">
+                <input type="email" name="email" required placeholder="email">
+                <button class="formButton" type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+    <script src="/price/pricingClientCode.js"></script>
+</body>
+</html>

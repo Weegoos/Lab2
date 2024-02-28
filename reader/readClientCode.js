@@ -7,7 +7,7 @@ fetch('/read/get-data')
     })
     .then(data => {
         const blogList = document.getElementById('blogList');
-
+        const user = localStorage.getItem('user')
         data.forEach(blog => {
             const listItem = document.createElement('li');
             const deleteButton = document.createElement('button')
@@ -78,8 +78,11 @@ fetch('/read/get-data')
             listItem.append(content)
             listItem.append(statusText)
             listItem.append(bottomLine)
-            listItem.append(updateButton)
+            if (user == "admin"){
+                listItem.append(updateButton)
             listItem.append(deleteButton)
+            }
+           
             listItem.append(settingIcon)
             listItem.append(settingData)
             blogList.appendChild(listItem);

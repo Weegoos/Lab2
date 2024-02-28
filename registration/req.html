@@ -10,8 +10,27 @@
 <body>
     <div class="container">
         <div class="wrapper">
-                <input type="text" id="userName" class="userName__input" name="userName" placeholder="Enter your username" required><br><br>
-                <button type="submit" class="submitBtn">Submit</button>
+                <p></p>
+                <form action="/registration/success" method="post">
+                   <div class="mainUserInfo">
+                    <input type="text" id="firstName" class="userName__input" name="firstName" placeholder="Enter your first name" required>
+                    <input type="text" name="lastName" placeholder="Enter your last name" required>
+
+                    <input type="text" name="username" placeholder="Enter your username" required>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                   </div>
+
+                   <div class="additionalUserInfo">
+                    <input type="number" name="age" placeholder="Enter your age" required min="6" max="100">
+                    <input type="text" name="gender" list="gender" placeholder="Enter your gender">
+                    <datalist id="gender">
+                        <option value="Female"></option>
+                        <option value="Male"></option>
+                    </datalist>
+                    <input type="text" name="country" list="countryList" placeholder="Enter your country" required class="country">
+                   </div>
+                     <button type="submit" class="submitBtn">Submit</button>
+                </form>
             
         </div>
     </div>

@@ -1,0 +1,99 @@
+@import url(
+    '/settings/css/mainSettings.css'
+);
+
+.slider{
+    position: relative;
+    left: 250px;
+    top: 50px;
+    width: 1000px;
+    height: 650px;
+    border: solid snow 1px;
+    background: snow;
+}
+
+.slider img{
+    width: 700px;
+    height: 650px;
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    opacity: 0.75;
+    object-fit: cover;
+}
+
+:root{
+    --buttonCharacteristics: 40px;
+}
+
+.slider button{
+    position: absolute;
+    font-size: 30px;
+    left: 0px;
+    left: 15px;
+    border: solid white 1px;
+    border-radius: 50%;
+    width: var(--buttonCharacteristics);
+    height:  var(--buttonCharacteristics);
+
+}
+
+.slider .arrawUp{
+    top: 235px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.slider .arrawDown{
+    top: 290px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.slider span{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    color: #8B8E91;
+}
+
+.slider .currentPage{
+    font-size: 81px;
+    font-weight: bold;
+}
+
+.slider .maxPage{
+    top: 210px;
+    left: 195px;
+}
+
+.slider .headline{
+    position: relative;
+    top: 150px;
+    color: #8B8E91;
+    left: 220px;
+    z-index: 999;
+    color: #3E444B;
+    font-size: 75px;
+    width: 450px;
+    font-weight: bold;
+}
+
+.slider .description{
+    position: relative;
+    margin-top: 10rem;
+    color: #8B8E91;
+    left: 220px;
+    z-index: 999;
+    color: #0C1824;
+    font-size: 18px;
+    width: 300px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.wrapper div{
+    position: relative;
+    margin-bottom: 1rem;
+    list-style: none;
+}

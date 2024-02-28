@@ -1,0 +1,62 @@
+@import url('/settings/css/mainSettings.css');
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    background-color: #474849;
+    position: relative;
+    width: 1450px;
+    height: 700px;
+    left: 45px;
+    top: 15px;
+    border-radius: 25px;
+}
+
+.wrapper .headline{
+    position: relative;
+    top: 20px;
+    left: 55px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.wrapper label{
+    color: #B5C6D7;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.wrapper input{
+    padding: 7px;
+    width: 500px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.imgDiv {
+    position: relative;
+    left: 55px;
+}
+
+.wrapper button{
+    position: relative;
+    border: solid #000 1px;
+    padding: 6px;
+    color: white;
+    border-radius: 4px;
+    background-color: #000;
+    left: 55px;
+    font-size: 16px;
+    width: 100px;
+}

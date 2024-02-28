@@ -19,7 +19,6 @@ function formatDate(isoDateString) {
     const month = date.getMonth() + 1;
     const day = date.getDate();
 
-    // Форматируем месяц и день, чтобы добавить ведущий 0, если число меньше 10
     const formattedMonth = month < 10 ? `0${month}` : month;
     const formattedDay = day < 10 ? `0${day}` : day;
 
@@ -46,7 +45,7 @@ router.use(bodyParser.json());
 router.post('/send-message', async (req, res) => {
     console.log('Получен POST-запрос /blogs/send-message');
     try {
-        const isoDateString = new Date().toISOString(); // Получаем текущую дату и время в формате ISO 8601
+        const isoDateString = new Date().toISOString();
         const formattedDate = formatDate(isoDateString)
 
         const formattedTimeValue = formattedTime(isoDateString);

@@ -17,3 +17,9 @@ window.addEventListener('scroll', function (){
 document.querySelector('.singin__button').addEventListener('click', function (){
     window.location.href = "http://localhost:3000/registration"
 })
+
+let start__button = document.querySelector('.start__button')
+
+start__button.addEventListener('click', function(){
+    window.location.href = 'http://localhost:3000/login'
+})
