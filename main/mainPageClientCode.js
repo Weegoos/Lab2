@@ -15,7 +15,7 @@ window.addEventListener('scroll', function (){
 })
 
 document.querySelector('.singin__button').addEventListener('click', function (){
-    window.location.href = "http://localhost:3000/registration"
+    window.location.href = "https://weegoos.github.io/Lab2/registration/req.html"
 })
 
 let start__button = document.querySelector('.start__button')
